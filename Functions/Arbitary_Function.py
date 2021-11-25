@@ -11,4 +11,4 @@ show("aabb","xyz","a","b","c")
 show("and")
 show("and","or")
 #to Check Documentation of function
-print(show.__doc__)
+print(show.__doc__  )
