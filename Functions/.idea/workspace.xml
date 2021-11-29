@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8ded8b97-2062-4eb4-b7c3-4c95324cfe3c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Returning_multiple_values.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/changeing_global_from_function.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arbitary_Function.py" beforeDir="false" afterPath="$PROJECT_DIR$/Arbitary_Function.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
