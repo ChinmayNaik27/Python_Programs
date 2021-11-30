@@ -3,7 +3,7 @@
 def star(rows,columns):                       ## fixed arguments
     """
     :param rows: input parameter for rows
-    :param columns: input parametrs for columns 
+    :param columns: input parametrs for columns
     """
     #Defining Function
     for i in range(1,rows+1):
