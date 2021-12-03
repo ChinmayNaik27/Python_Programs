@@ -5,9 +5,9 @@ class A:
         print("In Class A")
 class B(A):
     def __init__(self):
-        super().__init__()
         self.j=20
-        print("In Class B")
+        super().__init__()                        #callin Value form class a
+        print("In B")
     def add(self):
         print(self.i+self.j)
 ob1=B()
