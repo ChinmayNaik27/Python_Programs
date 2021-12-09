@@ -10,7 +10,7 @@ class C:
         print("Haahaa")
 
 def dodo(ob):
-    if hasattr(ob,'show'):
+    if hasattr(ob,'show'):        #CHECKING FOR FUCTION
         ob.show()
     else:
         ob.dis()
