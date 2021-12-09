@@ -1,24 +1,22 @@
-#dummy
+#herarchial inheritance
 class First:
-    def __init__(self):
-        self.x = 20
-        self.y = 10
+    def __init__(self,x,y):
+        self.x =x
+        self.y = y
 
 
 class Second(First):
-    def findsum(self):
+    def __init__(self,p,q):
+        super().__init__(p,q)
         self.z = self.x + self.y
         print("Sum is:", self.z)
 
 
 class Third(First):
-    def findsub(self):
+    def __init__(self,r,s):
+        super().__init__(r,s)
         self.z = self.x - self.y
         print("Subtraction is:", self.z)
 
-
-obj1 = Second()
-obj1.findsum()
-
-obj2 = Third()
-obj2.findsub()
+obj1 = Second(10,20)
+obj2 = Third(20,40)
