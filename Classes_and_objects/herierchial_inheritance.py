@@ -1,4 +1,4 @@
-#herarchial inheritance
+#herarchial inheritance.
 class First:
     def __init__(self,x,y):
         self.x =x

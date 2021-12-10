@@ -1,4 +1,4 @@
-#operator overloading
+#operator overloading.
 class A:
     def __init__(self,a,b):
         self.x=a

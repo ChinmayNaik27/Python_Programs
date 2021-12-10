@@ -1,5 +1,5 @@
 #methord_overwriting
-class A:
+class A:                                                          #BASE CLASS
     def show(self):
         print("This is a ")
 class B(A):
