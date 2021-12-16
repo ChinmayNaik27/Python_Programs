@@ -1,12 +1,23 @@
 import os                                                  #module for working with files and folders
-import datetime                                              #module for date and time
-##methord 1. getsize##
-a=os.path.getsize("demo.txt")                                         #gives size of file in bytes
-print("Size in  bytes is:",a)
-##methord 2. exisits()##
-a=os.path.exists("demo.txt")                #ch directory to given path
-print("The Given file is present.(True or False):",a)
-##methord 3. isdir() and isfile()##
+import shutil                                              #module for date and time
+##methord 1.##
+a=os.getcwd()                                         #gives the current working path or directory
+print("Current directory  is:",a)
+##methord 2. chdir()##
+a=os.chdir("E:/Pyhton Assignments/test")               #ch directory to given path
+a=os.getcwd()                                           #gives the current working path or directory
+print("Now the path is :",a)
+##methord 3.mkdir()##
 os.mkdir("test1")                                       #makes directory or folder
-##methord 4.getctime() and getmtime()##
-os.makedirs("a/b/c/d")                                 #makes multuple directories
+##methord 4.makedirs()##
+os.makedirs("a/b/c/d")                                 #makes multiple directories
+##methord 5.rename()##
+os.rename("test1","Test1")                              #renames folder
+##methord 6.rmdir()##
+os.rmdir("Test1")                                      #removes empty folder or directories
+##methord 7.listdir()##
+q=os.listdir()                                         #reads the folders in cwd
+for a in q:
+    print(a)
+##Shutil##
+shutil.rmtree("a")                                    #removes non- empty folders or direcotires
