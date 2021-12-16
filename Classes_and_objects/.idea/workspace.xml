@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69ceeeef-1c5d-45ce-af69-816209592780" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../File_handling/start-now-stop-never-2560x1440-1177.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File_handling/Copy_contents_of_text_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../File_handling/Copy_contents_of_text_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File_handling/copy_contents_of_image_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../File_handling/copy_contents_of_image_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../File_handling/write_append_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/../File_handling/write_append_command.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File_handling/File_handiling_from_physical_path.py" beforeDir="false" afterPath="$PROJECT_DIR$/../File_handling/File_handiling_from_physical_path.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
