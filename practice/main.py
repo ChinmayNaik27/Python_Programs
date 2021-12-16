@@ -1,11 +1,11 @@
 from abc import ABC,abstractmethod
-class A(ABC):
+class C(ABC):
     def show(self):
         print("In CLass A ")
     @abstractmethod
     def add(self,x,y):
         pass
-class B(A):
+class B(C):
     def disp(self):
         print("In B")
 
