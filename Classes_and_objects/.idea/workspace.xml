@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69ceeeef-1c5d-45ce-af69-816209592780" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user_defined{_exception.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/Copy_contents_of_text_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/File_Handling_image_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/File_handiling_from_physical_path.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/copy_contents_of_image_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/file_handling_relative_path.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/methord_in_with.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/read_lines.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/seek_and_tell.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/with_command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../File_handling/write_append_command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../practice/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../File_handling/start-now-stop-never-2560x1440-1177.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../opps/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../opps/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../opps/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../opps/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../opps/.idea/opps.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../opps/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../opps/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File_handling/Copy_contents_of_text_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../File_handling/Copy_contents_of_text_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File_handling/copy_contents_of_image_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../File_handling/copy_contents_of_image_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../File_handling/write_append_command.py" beforeDir="false" afterPath="$PROJECT_DIR$/../File_handling/write_append_command.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
