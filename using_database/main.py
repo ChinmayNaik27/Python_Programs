@@ -1,12 +1,14 @@
-"""WAP to print
-*     *
-*     *
-*  *  *
-*     * """
-for i in range(5):
-    for j in range(5):
-        if j==0 or j==4 or (i==3 and (j==1 or j==3))  or (i==2 and j==2):
-            print("*",end=" ")
-        else:
-            print(" ",end=" ")
-    print("")
+# import pymysql as m
+# con=m.connect(host='localhost',user='root',password='root',database='abc')
+# mycoursor=con.cursor()
+# sql="insert into dummy values('5','abcghy')"
+# mycoursor.execute(sql)
+# con.commit()
+# con.close()
+import pymysql as m
+con=m.connect(host='localhost',user='root',password='root',database='abc')
+mycoursor=con.cursor()
+sql="alter table dummy add gender varchar(55)"
+mycoursor.execute(sql)
+con.commit()
+con.close()
