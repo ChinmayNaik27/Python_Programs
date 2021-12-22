@@ -12,3 +12,15 @@ while i<=0:                                               #condition for infinit
         break                                               #to break the loop
     else:
         print("Wrong guess Please Try Again")
+
+#2nd way:
+import random                                                   #importing random module
+
+while True:                                                     #for infinite loop
+    randomno=random.randint(0,9)                                    #fetching random no. form range 0 to 9
+    n1=int(input("Enter a number:"))
+    if randomno==n1:
+        print("Correct Guess!!","The number was:",randomno)
+        break                                                     #to break the loop
+    else:
+        print("Wrong guess..The Number was",randomno,"Try again..")
