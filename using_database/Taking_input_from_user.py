@@ -6,10 +6,10 @@ abc=m.connect(host='localhost',user='root',password='root',database='abc')
 #creating coursor object
 mycursor=abc.cursor()
 #executing queries
-x=input("Enter the id :")
+x=int(input("Enter the id :"))
 s1=input("Enter name:")
-sql="insert into dummy value %s %s"
-value(x,s1)
-mycursor.execute(sql,value)
+sql="insert into dummy values( %s ,%s)"
+values=(x,s1)
+mycursor.execute(sql,values)
 abc.commit()
 abc.close()
