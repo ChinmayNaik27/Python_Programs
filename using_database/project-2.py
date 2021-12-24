@@ -32,38 +32,45 @@ class A:
         self.cursor.execute(self.sql)
         x11=self.cursor.fetchall()
         for i in x11:
-            print(i)
+            print(i[0],i[1])
     def truncate(self):
         self.sql="truncate table dummy"
         self.cursor.execute(self.sql)
     def close(self):
         self.con.close()
 ob=A()
-while True:
-    x = int(input("Following are no of opertions\n1.For Insert\n2.For select\n3.For Delete\n4.For update"
-                  "\n5.To Clear Complete Data inside table\nAnd any number to exit the proram:"))
-    if x==1:
-        id = input("Enter id:")
-        name = input("Enter name :")
-        ob.insert(id,name)
-        print("Record Inserted Successfully")
-    elif x==2:
-        print("Data is:")
-        ob.select()
-    elif x==3:
-        id = input("Enter id:")
-        ob.delete(id)
-        print("Record Cleared Successfully")
-    elif x==4:
-        id = input("Enter id:")
-        name= input("Enter name:")
-        ob.update()
-        print("Record Updated Successfully")
-    elif x==5:
-        ob.truncate()
-        print("Table Cleared Successfully")
-    else:
-        break
-    z2=input("Wish to Continue???(y/n):")
-    if z2!='y':
-        break
+try:
+    while True:
+        x = int(input("Following are no of opertions\n1.For Insert\n2.For select\n3.For Delete\n4.For update"
+                      "\n5.To Clear Complete Data inside table\nAnd any number to exit the program:"))
+        if x == 1:
+            id = input("Enter id:")
+            name = input("Enter name :")
+            ob.insert(id, name)
+            print("Record Inserted Successfully")
+        elif x == 2:
+            print("Data is:")
+            ob.select()
+        elif x == 3:
+            id = input("Enter id:")
+            ob.delete(id)
+            print("Record Cleared Successfully")
+        elif x == 4:
+            id = input("Enter id:")
+            name = input("Enter name:")
+            ob.update()
+            print("Record Updated Successfully")
+        elif x == 5:
+            w=input("Are You Sure To Clear the data of table\n(All the data in table will be erased!)"
+                    "\n(y/n):")
+            if w=='y':
+                ob.truncate()
+                print("Table Cleared Successfully")
+        else:
+            break
+        z2 = input("Wish to Continue???(y/n):")
+        if z2 != 'y':
+            break
+except ValueError as e1:
+    print("Please Enter a digit,\nCharacters are not accepted.."
+          "\nTry Again..")
