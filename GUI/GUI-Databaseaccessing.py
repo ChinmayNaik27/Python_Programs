@@ -37,7 +37,7 @@ def data():
 def update():
     id1 = e1.get()
     name = e2.get()
-    ob.insert(id1, name)
+    ob.update(id1, name)
     l1['text'] = "Record Updated"
 def clear():
     e1.delete(0,END)
