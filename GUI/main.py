@@ -36,7 +36,7 @@ root.title("This is For Entry from user")
 #Change size of window
 root.geometry("500x500")
 #Creating Frame Window
-f1=Frame(root,bg="SkyBlue",width=500,height=500)
+f1=Frame(root,bg="skyBlue",width=500,height=500)
 f1.pack(fill='both',expand=True)
 #Taking Entry Form User
 e1=Entry(f1,width=20)
