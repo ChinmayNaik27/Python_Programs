@@ -6,6 +6,8 @@ print(x)
 y=tuple1.count(1)
 print(y)
 #accessing tuple is same as list
+print(tuple1[0])
+print(tuple1[-1])
 print(tuple1[2:5])
 print(tuple1[:5])
 print(tuple1[2:])
