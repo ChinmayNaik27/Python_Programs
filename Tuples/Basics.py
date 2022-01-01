@@ -12,3 +12,8 @@ print(tuple1[2:])
 print(tuple1[::])
 print(tuple1[::-1])
 print(tuple1[:-1])
+#creating a tuple with single element
+t1=(100,) #tuple of single element
+print(t1)
+print(type(t1))
+print(id(t1)) #shows location where it is stored
