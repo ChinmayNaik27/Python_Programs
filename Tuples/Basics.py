@@ -19,3 +19,10 @@ t1=(100,) #tuple of single element
 print(t1)
 print(type(t1))
 print(id(t1)) #shows location where it is stored
+t3=1,2,3            #packking or assigning tuple
+print(t3)
+print(type(t3))
+a,b,c=t3               #unpacking tuple
+print(a)
+print(b)
+print(c)
