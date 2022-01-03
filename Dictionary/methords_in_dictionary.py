@@ -1,0 +1,32 @@
+#methords in  dictionaries
+d1={1:25,2:'A',3:'abc',4:'pqr'}
+print(d1)
+###keys
+dkeys=d1.keys()
+print(dkeys)
+#values
+dvalues=d1.values()
+print(dvalues)
+#get
+print(d1.get(1))
+##updation
+s1={1:'www',2:'B',3:999,5:'ttt'}
+d1.update(s1)
+print(d1)
+####pop
+d1.pop(4)
+print(d1)
+##popitems
+d1.popitem()
+print(d1)
+#copy
+d2=d1.copy()
+print(id(d1))
+print(id(d2))
+#items
+ditems=d1.items()
+for k,v in ditems:
+    print(k,v)
+#clear
+d1.clear()
+print(d1)
