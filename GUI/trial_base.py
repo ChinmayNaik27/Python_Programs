@@ -32,7 +32,6 @@ class Login:
         self.cursor.execute(self.sql)
         self.x = self.cursor.fetchall()
         for i in self.x:
-            print(i[0],i[1])
             if i[0] == self.user1 and i[1] == self.password:
                 self.l1['text'] = "Login successful"
                 self.l1['bg'] = "LightGreen"
@@ -50,7 +49,7 @@ class Database:
         self.f1.pack(fill=BOTH, expand=True)
         self.e1 = Entry(self.f1, width=20)
         self.e1.pack(pady=10)
-        self.e2 = Entry(self.f1, width=20)
+        self.e2 = Entry(self.f1, width=20,show="*")
         self.e2.pack(pady=10)
         self.l1 = Label(self.f1, text="Result", font=("Times New Roman", 25, "italic"), bg="pink")
         self.l1.pack()
@@ -96,7 +95,7 @@ class Register(Login):
         self.f1.pack(fill=BOTH,expand=True)
         self.e1=Entry(self.f1,width=20)
         self.e1.pack(pady=10)
-        self.e2=Entry(self.f1,width=20)
+        self.e2=Entry(self.f1,width=20,show="*")
         self.e2.pack(pady=10)
         self.b1=Button(self.f1,text="Register",width=20,command=self.button_click)
         self.b1.pack(pady=10)
