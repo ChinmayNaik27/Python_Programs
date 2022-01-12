@@ -32,12 +32,12 @@ class Login:
         self.cursor.execute(self.sql)
         self.x = self.cursor.fetchone()
         if self.x[0] == self.user1 and self.x[1] == self.password:
-            self.l1['text']="Login successful"
-            self.l1['bg']="LightGreen"
+            self.l1['text'] = "Login successful"
+            self.l1['bg'] = "LightGreen"
             self.f1.destroy()
             ob3 = Database(self.root)
         else:
-            self.l1['text']="Invalid User"
+            self.l1['text'] = "Invalid User"
         self.con1.close()
 class Database:
     def __init__(self,root):
@@ -50,7 +50,7 @@ class Database:
         self.e1.pack(pady=10)
         self.e2 = Entry(self.f1, width=20)
         self.e2.pack(pady=10)
-        self.l1 = Label(self.f1, text="Welcome!!", font=("Times New Roman", 25, "italic"), bg="grey")
+        self.l1 = Label(self.f1, text="Result", font=("Times New Roman", 25, "italic"), bg="pink")
         self.l1.pack()
         self.b1 = Button(self.f1, text="Insert", width=20, command=self.insert)
         self.b1.pack(pady=10)
@@ -74,15 +74,15 @@ class Database:
         self.sql = "update dummy set name=%s where id=%s"
         self.values = (self.name, self.id)
         self.cursor.execute(self.sql, self.values)
-        self.con.commit()
         self.l1['text'] = "Record Updated Successfully"
+        self.con.commit()
     def delete(self):
         self.id = self.e1.get()
         self.sql = "delete from dummy where id=%s"
         self.values = (self.id)
         self.cursor.execute(self.sql, self.values)
-        self.con.commit()
         self.l1['text'] = "Record Deleted Successfully"
+        self.con.commit()
     def close(self):
         self.con.close()
         self.f1.destroy()
