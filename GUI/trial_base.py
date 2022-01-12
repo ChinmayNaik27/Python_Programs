@@ -11,7 +11,7 @@ class Login:
         self.e1.pack(pady=10)
         self.e2 = Entry(self.f1, width=20)
         self.e2.pack(pady=10)
-        self.l1=Label(self.f1,text="Result",font=("Times New Roman",15,"bold"),bg="pink")
+        self.l1=Label(self.f1,font=("Times New Roman",15,"bold"),bg="pink")
         self.l1.pack()
         self.b1=Button(self.f1,text="Login",width=20,command=self.button_click2)
         self.b1.pack(pady=10)
@@ -30,14 +30,16 @@ class Login:
         self.data1()
         self.sql = "select * from table1"
         self.cursor.execute(self.sql)
-        self.x = self.cursor.fetchone()
-        if self.x[0] == self.user1 and self.x[1] == self.password:
-            self.l1['text'] = "Login successful"
-            self.l1['bg'] = "LightGreen"
-            self.f1.destroy()
-            ob3 = Database(self.root)
-        else:
-            self.l1['text'] = "Invalid User"
+        self.x = self.cursor.fetchall()
+        for i in self.x:
+            print(i[0],i[1])
+            if i[0] == self.user1 and i[1] == self.password:
+                self.l1['text'] = "Login successful"
+                self.l1['bg'] = "LightGreen"
+                self.f1.destroy()
+                ob3 = Database(self.root)
+            else:
+                self.l1['text'] = "Invalid User"
         self.con1.close()
 class Database:
     def __init__(self,root):
