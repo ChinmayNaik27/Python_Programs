@@ -5,10 +5,14 @@ class Login:
 
     def __init__(self,root):
         self.root=root
-        self.f1=Frame(self.root,bg='Orange',width=500,height=500)
+        self.f1=Frame(self.root,bg='SkyBlue',width=500,height=500)
         self.f1.pack(fill=BOTH,expand=True)
+        self.l2 = Label(self.f1, text="Username", font=("Times New Roman", 10, "italic"), bg="Skyblue")
+        self.l2.place(x=120,y=10)
         self.e1 = Entry(self.f1, width=20)
         self.e1.pack(pady=10)
+        self.l3 = Label(self.f1, text="Password", font=("Times New Roman", 10, "italic"), bg="Skyblue")
+        self.l3.place(x=120, y=50)
         self.e2 = Entry(self.f1, width=20)
         self.e2.pack(pady=10)
         self.l1=Label(self.f1,text="Result",font=("Times New Roman",15,"bold"),bg="pink")
@@ -30,14 +34,15 @@ class Login:
         self.data1()
         self.sql = "select * from table1"
         self.cursor.execute(self.sql)
-        self.x = self.cursor.fetchone()
-        if self.x[0] == self.user1 and self.x[1] == self.password:
-            self.l1['text']="Login successful"
-            self.l1['bg']="LightGreen"
-            self.f1.destroy()
-            ob3 = Database(self.root)
-        else:
-            self.l1['text']="Invalid User"
+        self.x = self.cursor.fetchmany()
+        for self.x1 in self.x:
+            if self.x1[0] == self.user1 and self.x1[1] == self.password:
+                self.l1['text'] = "Login successful"
+                self.l1['bg'] = "LightGreen"
+                self.f1.destroy()
+                ob3 = Database(self.root)
+            else:
+                self.l1['text'] = "Invalid User"
         self.con1.close()
 class Database:
     def __init__(self,root):
@@ -46,8 +51,12 @@ class Database:
         self.cursor = self.con.cursor()
         self.f1 = Frame(self.root, bg='lightgreen', width=500, height=500)
         self.f1.pack(fill=BOTH, expand=True)
+        self.l3 = Label(self.f1, text="Enter id", font=("Times New Roman", 10, "italic"), bg="lightgreen")
+        self.l3.place(x=125, y=10)
         self.e1 = Entry(self.f1, width=20)
         self.e1.pack(pady=10)
+        self.l3 = Label(self.f1, text="Enter Name", font=("Times New Roman", 10, "italic"), bg="lightgreen")
+        self.l3.place(x=115, y=50)
         self.e2 = Entry(self.f1, width=20)
         self.e2.pack(pady=10)
         self.l1 = Label(self.f1, text="Welcome!!", font=("Times New Roman", 25, "italic"), bg="grey")
@@ -92,8 +101,12 @@ class Register(Login):
         self.root=root
         self.f1=Frame(self.root,bg='Violet',width=500,height=500)
         self.f1.pack(fill=BOTH,expand=True)
+        self.l3 = Label(self.f1, text="New-Username", font=("Times New Roman", 10, "italic"), bg="violet")
+        self.l3.place(x=100, y=10)
         self.e1=Entry(self.f1,width=20)
         self.e1.pack(pady=10)
+        self.l3 = Label(self.f1, text="Set-Password", font=("Times New Roman", 10, "italic"), bg="violet")
+        self.l3.place(x=100, y=50)
         self.e2=Entry(self.f1,width=20)
         self.e2.pack(pady=10)
         self.b1=Button(self.f1,text="Register",width=20,command=self.button_click)
