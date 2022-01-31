@@ -14,15 +14,15 @@ a?c
 ??b
 Output:
 1 3   """
-s1='aac'
-s2='aab'
-
+s1=input("Enter string 1:")
+s2=input("Enter string 2:")
+x1=0                   #this is maximum difference
+x2=0                    #this is minimum difference
 for i in range(len(s1)):
-    x1=0
-    for j in range(len(s2)):
-        if s1[i]==s2[j]:
-            break
-        elif i!=j:
-            x1+=1
+    if s1[i] == '?' or s2[i] == '?':
+        x1+=1
+    elif s1[i] != s2[i]:
+        x2+=1
+        x1+=1
 
-print(x1)
+print(x2 , x1)
