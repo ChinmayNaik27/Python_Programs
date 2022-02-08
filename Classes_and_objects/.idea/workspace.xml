@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69ceeeef-1c5d-45ce-af69-816209592780" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Modules/calling_module_from_different_Location.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Modules/test_file_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Modules/importing_module_on_different_location.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Modules/importing_module_on_different_location.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
