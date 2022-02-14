@@ -4,10 +4,10 @@ Name of the student. Marks of the student obtained in three subjects. Function t
 Write an appropriate main() function to demonstrate the functioning of the above."""
 class student:
     def __init__(self):
-        self.name=input("Enter name :")
-        self.marks1=input("Enter marks of subject 1:")
-        self.marks2 = input("Enter marks of subject 2:")
-        self.marks3 = input("Enter marks of subject 3:")
+        self.name=int(input("Enter name :"))
+        self.marks1=int(input("Enter marks of subject 1:"))
+        self.marks2 = int(input("Enter marks of subject 2:"))
+        self.marks3 = int(input("Enter marks of subject 3:"))
     def avg(self):
         self.avg=(self.marks1+self.marks2+self.marks3)/3
         print("Average is:",self.avg)
