@@ -4,7 +4,7 @@ Name of the student. Marks of the student obtained in three subjects. Function t
 Write an appropriate main() function to demonstrate the functioning of the above."""
 class student:
     def __init__(self):
-        self.name=int(input("Enter name :"))
+        self.name=input("Enter name :")
         self.marks1=int(input("Enter marks of subject 1:"))
         self.marks2 = int(input("Enter marks of subject 2:"))
         self.marks3 = int(input("Enter marks of subject 3:"))
