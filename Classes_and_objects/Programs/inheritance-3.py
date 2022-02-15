@@ -15,7 +15,7 @@ class Student(Person):
     def name1(self):
         self.name2()
 class Teacher(Person):
-    def profile1(self):
+    def __init__(self):
         self.name2()
         self.name3()
         self.salary=int(input("Enter Your Salary:"))
@@ -24,7 +24,7 @@ class Teacher(Person):
         print("Teacher's name:",self.name,"\nTeachers Qualification:",self.edu,"\nTeachers Id is :",self.id,"\nThe Salary Of Techer is:",self.salary,"\nThis is Your Teaching Subject:",self.tsubject)
 
 class collegestudent(Student):
-    def profile2(self):
+    def __init__(self):
         self.name1()
         self.year=input("Enter Your Year:")
         self.major=input("Enter Your Stream\Field:")
@@ -34,7 +34,5 @@ class collegestudent(Student):
 
 ob1=Teacher()
 ob2=collegestudent()
-ob1.profile1()
 ob1.show()
-ob2.profile2()
 ob2.display()
