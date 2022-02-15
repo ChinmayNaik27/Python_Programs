@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69ceeeef-1c5d-45ce-af69-816209592780" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Programs/inheritance-2_methord-2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Programs/inheritance-3_methord-2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Programs/inheritance-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Programs/inheritance-3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
