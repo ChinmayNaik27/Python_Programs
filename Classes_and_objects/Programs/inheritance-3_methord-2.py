@@ -6,26 +6,23 @@ The CollegeStudent class will extend the Student class by adding a year (current
 and major (e.g. “Electrical Engineering”, “Communications”, “Undeclared”)."""
 
 class Person:
-    def name2(self):
+    def __init__(self):
         self.name = input("Enter Your Name :")
         self.id=int(input("Enter College PRN:"))
-    def name3(self):
-        self.edu=input("Enter Your Qualification:")
 class Student(Person):
-    def name1(self):
-        self.name2()
+    def __init__(self):
+        super().__init__()
 class Teacher(Person):
     def __init__(self):
-        self.name2()
-        self.name3()
+        super().__init__()
         self.salary=int(input("Enter Your Salary:"))
         self.tsubject=input("Enter Your Subject:")
     def show(self):
-        print("Teacher's name:",self.name,"\nTeachers Qualification:",self.edu,"\nTeachers Id is :",self.id,"\nThe Salary Of Techer is:",self.salary,"\nThis is Your Teaching Subject:",self.tsubject)
+        print("Teacher's name:",self.name,"\nTeachers Id is :",self.id,"\nThe Salary Of Techer is:",self.salary,"\nThis is Your Teaching Subject:",self.tsubject)
 
 class collegestudent(Student):
     def __init__(self):
-        self.name1()
+        super().__init__()
         self.year=input("Enter Your Year:")
         self.major=input("Enter Your Stream\Field:")
     def display(self):
