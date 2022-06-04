@@ -17,6 +17,7 @@ class Bird(animal):
         print("This is Fly Function")
 
 ob1=animal()
+
 ob2=Bird()
 ob1.eat()
 ob1.sleep()

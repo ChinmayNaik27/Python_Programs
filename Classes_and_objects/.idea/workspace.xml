@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69ceeeef-1c5d-45ce-af69-816209592780" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Programs/inheritance-3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Programs/inheritance-3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programs/inheritance-1_methord-2.py" beforeDir="false" afterPath="$PROJECT_DIR$/Programs/inheritance-1_methord-2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/practice_pycharm" />
   </component>
   <component name="RunManager" selected="Python.inheritance-1_methord-2">
     <configuration name="Problem-5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
