@@ -2,7 +2,7 @@
 print("Welcome !! Opertions performed are:\nAdd\nSub\nMul\nDiv1\nDiv2")
 while True:
     a = input("Enter a operation to be performed:")
-    a = str(a.upper)
+    a = a.upper()
     b = int(input("Enter 1st number:"))
     c = int(input("Enter 2nd number:"))
     d = 0
