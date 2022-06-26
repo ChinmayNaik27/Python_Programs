@@ -99,6 +99,7 @@ import matplotlib.pyplot as plt
 # cols=['Green','grey','cyan','purple']
 # plt.pie(slices,labels=dept,colors=cols,startangle=90)
 # plt.title("Pie chart")
+#plt.legend()
 # plt.show()
 # slices=[50,20,20,15]
 # dept=['Mkt','HR','Sales','Tech']
