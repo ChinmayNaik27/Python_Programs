@@ -1,0 +1,20 @@
+"""Code for if word is not complete in a sentence, then the word should not be included in the sentence
+eg: original : this is a great name 
+input given this is a gr
+output to be printed as this is a """
+
+str="this is a great name world"
+print(str)
+a= input("Enter a word:")
+str1=str.split(" ")
+# print(str1)
+s1=""
+s2=" "
+a1=a.split(" ")
+for i in range(len(a1)):
+    if str1[i]==a1[i]:
+        s1=s1+a1[i]+s2
+        # print(a1[i])
+    # else:
+    #     print(''.join(a1))
+print(s1)
